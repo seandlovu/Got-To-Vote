@@ -39,11 +39,11 @@ county_sel.onchange = function () {
 		const_sel.innerHTML = "<option value=\"0\">Loading Constituencies... </option>";
 		ward_sel.innerHTML = "<option value=\"0\">Loading Wards...</option>";
 
-		header_name.innerHTML = unescape(toTitleCase(escape(county_sel.options[county_sel.selectedIndex].innerHTML)))+" County";
+		header_name.innerHTML = unescape(toTitleCase(escape(county_sel.options[county_sel.selectedIndex].innerHTML)))+" District";
 		
 		$("#reg-centres").html("<tr><td>"+
 			"<p><img src=\"img/spinner.gif\" alt=\"\" />"+
-			"Finding registration centres...</p></td></tr>");
+			"Finding polling stations...</p></td></tr>");
 		$("#found-reg").slideDown('fast');
 		
 		county_code = county_sel.value;
