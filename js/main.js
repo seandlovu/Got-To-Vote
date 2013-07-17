@@ -88,6 +88,7 @@ const_sel.onchange = function() {
 					if (json_result.rows[i][5] == ward_code[0]) {
 						centre_code[centre_code.length] = json_result.rows[i][7];
 						centre_name[centre_code.length-1] = json_result.rows[i][8];
+						
 					}
 				}
 			}
@@ -165,8 +166,7 @@ function run_get_centres(table_id) {
 				centre_code.pop();
 				centre_name.pop();
 			}
-			
-			
+						
 			for (var i = 0; i < json_result.rows.length; i++){
 				if (i==0) {	
 					const_code[0] = json_result.rows[0][3];
@@ -174,7 +174,7 @@ function run_get_centres(table_id) {
 					ward_code[0] = json_result.rows[0][5];
 					ward_name[0] = json_result.rows[0][6];
 					centre_code[0] = json_result.rows[i][7];
-					centre_name[0] = json_result.rows[i][8] + " - " + json_result.rows[i][9];
+					centre_name[0] = json_result.rows[i][8]+ " - " + json_result.rows[i][9];
 				} else {
 					var const_already = 0;
 					for (var c = 0; c < const_code.length; c++) {
