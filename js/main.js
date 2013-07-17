@@ -132,7 +132,7 @@ ward_sel.onchange = function() {
 				"<tr><td><p>"+toTitleCase(centre_name[i])+"</p></td></tr>");
 		}
 		
-		header_name.innerHTML = unescape(toTitleCase(escape(ward_sel.options[ward_sel.selectedIndex].text)))+" Ward";
+		header_name.innerHTML = " Ward" + unescape(toTitleCase(escape(ward_sel.options[ward_sel.selectedIndex].text)));
 	}
 }
 
