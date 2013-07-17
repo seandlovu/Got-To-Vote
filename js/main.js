@@ -1,6 +1,6 @@
 // Selection Criteria
 
-var county_sel = document.getElementById("county_select");
+var district_sel = document.getElementById("district_select");
 var const_sel = document.getElementById("const_select");
 var ward_sel = document.getElementById("ward_select");
 
@@ -9,7 +9,7 @@ var loading_gif = document.getElementById("loading_gif");
 
 var header_name = document.getElementById("header-name");
 
-var county_code = 1;
+var district_code = 1;
 
 var const_code = new Array();
 var const_name = new Array();
@@ -23,37 +23,37 @@ var json_result;
 	
 var get_url = "https://www.googleapis.com/fusiontables/v1/query?sql=";
 var sql_1 = encodeURIComponent("SELECT * FROM ");
-var sql_2 = encodeURIComponent(" WHERE County_Code = "+county_code);
+var sql_2 = encodeURIComponent(" WHERE District_Code = "+district_code);
 var api_key = "&key=AIzaSyAwvkIls5mQybyp2R3g4FGiVetNdeVjUeE";
 
-county_sel.onchange = function () {
+district_sel.onchange = function () {
 	
-	if (county_sel.value==0) {
+	if (district_sel.value==0) {
 		//Selected Default
-		county_sel.options[county_code].selected = "true";
+		district_sel.options[district_code].selected = "true";
 	} else {
-		if (county_sel.options[0].value==0) {
-			county_sel.remove(0);
+		if (district_sel.options[0].value==0) {
+			district_sel.remove(0);
 		}
 		const_sel.innerHTML = "<option value=\"0\">Loading Constituencies... </option>";
 		ward_sel.innerHTML = "<option value=\"0\">Loading Wards...</option>";
 
-		header_name.innerHTML = unescape(toTitleCase(escape(county_sel.options[county_sel.selectedIndex].innerHTML)))+" District";
+		header_name.innerHTML = unescape(toTitleCase(escape(district_sel.options[district_sel.selectedIndex].innerHTML)))+" District";
 		
 		$("#reg-centres").html("<tr><td>"+
 			"<p><img src=\"img/spinner.gif\" alt=\"\" />"+
 			"Finding polling stations...</p></td></tr>");
 		$("#found-reg").slideDown('fast');
 		
-		county_code = county_sel.value;
-		sql_2 = encodeURIComponent(" WHERE County_Code = "+county_code);
+		district_code = district_sel.value;
+		sql_2 = encodeURIComponent(" WHERE District_Code = "+district_code);
 		run_get_centres("1ZdQijBwFQdJoFLUhpwSQ_bg67_TKdtD2CAjD6eE");
 	}
 }
 
 const_sel.onchange = function() {
 	if (const_sel.value==0) {
-		//Do Nothing. No County Selected.
+		//Do Nothing. No District Selected.
 	} else {
 		var del_no = ward_code.length;
 		for (var i = 0; i < del_no; i++) {
@@ -93,7 +93,7 @@ const_sel.onchange = function() {
 			}
 		}
 		
-		ward_sel.innerHTML = "";
+		ward_sel.innerHTML = "";  
 		for (var i = 0; i <ward_code.length; i++) {
 			ward_sel.innerHTML += "<option value=\""+ward_code[i]+"\">"+toTitleCase(ward_name[i])+"</option>";
 		}
@@ -110,7 +110,7 @@ const_sel.onchange = function() {
 
 ward_sel.onchange = function() {
 	if (const_sel.value==0) {
-		//Do Nothing. No County Selected.
+		//Do Nothing. No District Selected.
 	} else {
 		var del_no = centre_code.length;
 		for (var i = 0; i < del_no; i++) {
@@ -174,7 +174,7 @@ function run_get_centres(table_id) {
 					ward_code[0] = json_result.rows[0][5];
 					ward_name[0] = json_result.rows[0][6];
 					centre_code[0] = json_result.rows[i][7];
-					centre_name[0] = json_result.rows[i][8];
+					centre_name[0] = json_result.rows[i][8] + " - " + json_result.rows[i][9];
 				} else {
 					var const_already = 0;
 					for (var c = 0; c < const_code.length; c++) {
@@ -223,8 +223,8 @@ function run_get_centres(table_id) {
 					"<tr><td><p>"+toTitleCase(centre_name[i])+"</p></td></tr>");
 			}
 			
-			header_name.innerHTML = unescape(toTitleCase(escape(ward_name[0])))+" Ward";
-			
+			header_name.innerHTML = " Ward " + unescape(toTitleCase(escape(ward_name[0])));
+									
 		}
 	}
 	xmlhttp.open("GET", get_url+sql_1+table_id+sql_2+api_key, true);
