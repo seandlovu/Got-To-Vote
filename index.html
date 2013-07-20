@@ -6,10 +6,10 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>ZimGotToVote!|Zimvoices</title>
+        <title>GoToVote! ZW |By Zimvoices</title>
         <meta name="description" content="Find a ZEC polling station nearest to you. By ZimVoices.">
         <meta name="viewport" content="width=device-width">
-        <meta property="og:image" content="http://code4kenya.org/images/logo_5.png"/>
+        <meta property="og:image" content="http://zimvoices.co.zw/images/logo_5.png"/>
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
@@ -35,14 +35,15 @@
         			<li><a href="about.html">About</a></li>
         		</ul>
         		<!--<h3 class="muted">Got To Vote! Ke</h3>-->
-        		<a href="/"><img src="img/logo_2.png" alt="Your Vote is You Voice!" /></a>
+        		<a href="/"><img src="img/logo_2.png" alt="GoToVote! ZW" /></a>
         	</div>
         	
         	<hr>
         	
         	<div class="jumbotron" id="jumbotron">
-        		<h1>Find a Polling Station nearest to You!</h1>
-        		<p class="lead">It is NOW! time for you to locate a polling station in your district that you are going to use in the upcoming harmonised elections so that you will be prepared to go out and vote come Wednesday 31 July 2013.The Zimbabwe Electoral Commission (ZEC) chief elections officer Lovemore Sekeramayi said electoral boundaries for the 2013 harmonised elections remain as they were for the 2008 elections.</p>
+        		<h1>Find a ZEC polling station nearest you NOW!</h1>
+        		<p class="lead">Make sure you exercise your <b>Democratic</b> right to vote by locating a <b>Polling Station</b> in your constituency and ward <b>TODAY!</b> click below and check where you will be <b>VOTING</b> on Wednesday the 31st of July 2013. 
+					<h3>Your Vote is Your Voice!</h3>
         		<a class="btn btn-large btn-success" href="#" id="findlink" onclick="$('#find').scrollTop();">Find a Polling Station</a>
         	</div>
         	
@@ -52,7 +53,7 @@
         		<div class="span6">
         			
         			
-        			<h4>Who is eligable to vote in the Presidential Election?</h4>
+        			<h4>Who is eligible to vote in the Presidential Election?</h4>
         			<p>In order to qualify as a voter, one must:</p>
         			<ul>
         				<li><p>Be a Zimbabwean citizen</p></li>
@@ -61,27 +62,17 @@
                                     
         			</ul>
         			
-        			<h4>Who is eligable to vote in the House of Assembly Constituency Election?</h4>
+        			<h4>Who is eligible to vote in the House of Assembly Constituency Election?</h4>
                     <p>In order to qualify as a voter, one must:</p>
         			<ul>
         			<li><p>Be a Zimbabwean citizen</p></li>
         				<li><p>Be 18 years old and above</p></li>
                         <li><p>Be registered as voter in the constituency in question</p></li>
-        			
+        		
         		</div>
         		<div class="span6">
         			
-        			<h4>Who is eligable to vote in the Senate Election?</h4>
-        			<p>In order to qualify as a voter, one must:</p>
-        			<ul>
-        				<li><p>Be a Zimbabwean citizen</p></li>
-        				<li><p>Be 18 years old and above</p></li>
-                        <li><p>Be registered voter in constituency within the Senate boundary</p></li> 
-                        	
-        		</div>
-        		<div class="span6">
-        			
-        			<h4>Who is eligable to vote in the Local Authority Election?</h4>
+        			<h4>Who is eligible to vote in the Local Authority Election?</h4>
         			<p>In order to qualify as a voter, one must:</p>
         			<ul>
         				<li><p>Be a Zimbabwean citizen</p></li>
@@ -102,349 +93,426 @@
 			
 			<div id="find-reg" style="text-align: center;">
 				<h2>Find A Polling Station!</h2>
-			
+							
 	        	<div class="row-fluid marketing" style="margin-top: 20px; margin-bottom: 10px;">
 	        		<div class="span4">
 	        			<div>
-        				  <p class="lead">District
+        				  <p class="lead">Constituency
 </p>
 	        				<select id="district_select">
 	        				
 	        				
-	        					<option value="0">Select a District
+	        					<option value="0">Select a Constituency
 </option>
-	        					<option value="1" selected>Chitungwiza Municipality</option>
-	        					<option value="2">Beitbridge East</option>
-	        					<option value="3">Bikita East</option>
-	        					<option value="4">Bikita South</option>
-	        					<option value="5">Bikita West</option>
-	        					<option value="6">Bindura North</option>
-	        					<option value="7">Bindura South</option>
-	        					<option value="8">Binga South</option>
-	        					<option value="9">Binga North</option>
-	        					<option value="10">Bubi</option>
-                                <option value="11">Buhera Central</option>
-	        					<option value="12">Buhera North</option>
-	        					<option value="13">Buhera South</option>
-	        					<option value="14">Buhera West</option>
-	        					<option value="15">Bulilima East</option>
-	        					<option value="16">Bulilima West</option>
-	        					<option value="17">Chakari</option>
-	        					<option value="18">Chegutu East</option>
-	        					<option value="19">Chegutu West</option>
-                                <option value="20">Chikomba Central</option>
-	        					<option value="21">Chikomba East</option>
-	        					<option value="22">Chikomba West</option>
-	        					<option value="23">Chimanimani East</option>
-	        					<option value="24">Chimanimani West</option>
-	        					<option value="25">Chinhoyi</option>
-	        					<option value="26">Chipinge Central</option>
-	        					<option value="27">Chipinge East</option>
-	        					<option value="28">Chipinge South</option>
-                                <option value="29">Chipinge West</option>
-	        					<option value="30">Chipinge Central</option>
-	        					<option value="31">Chiredzi East</option>
-	        					<option value="32">Chiredzi North</option>
-	        					<option value="33">Chiredzi South</option>
-	        					<option value="34">Chiredzi West</option>
-	        					<option value="35">Chivi Central</option>
-	        					<option value="36">Chivi North</option>
-                                <option value="37">Chivi South</option>
-	        					<option value="38">Dangamvura Chikanga</option>
-	        					<option value="39">Epworth local board</option>
-	        					<option value="40">Gokwe North RDC</option>
-	        					<option value="41">Gokwe South RDC</option>
-	        					<option value="42">Gokwe Town Council</option>
-	        					<option value="43">Goromonzi North</option>
-	        					<option value="44">Goromonzi South</option>
-	        					<option value="45">Goromonzi West</option>
-                                <option value="46">Guruve North</option>
-	        					<option value="47">Guruve South</option>
-	        					<option value="48">Gutu Central</option>
-	        					<option value="49">Gutu East</option>
-	        					<option value="50">Gutu North</option>
-	        					<option value="51">Gutu South</option>
-	        					<option value="52">Gutu West</option>
-	        					<option value="53">Gwabalanda/Masotsha Ndlovu</option>
-	        					<option value="54">Gwanda Central</option>
-                                <option value="55">Gwanda North</option>
-	        					<option value="56">Gwanda South</option>
-	        					<option value="57">Gweru Municipality</option>
-	        					<option value="58">Harare Municipality</option>
-	        					<option value="59">Headlands</option>
-	        					<option value="60">Hurungwe Central</option>
-	        					<option value="61">Hurungwe East</option>
-	        					<option value="62">Hurungwe North</option>
-	        					<option value="63">Hurungwe West</option>
-                                <option value="64">Hwange Central</option>
-	        					<option value="65">Hwange East</option>
-	        					<option value="66">Hwange West</option>
-	        					<option value="67">Insiza North</option>
-	        					<option value="68">Insiza South</option>
-	        					<option value="69">Kadoma Central</option>
-	        					<option value="70">Kariba</option>
-	        					<option value="71">Kwekwe Municipality</option>
-	        					<option value="72">Lupane East</option>
-                                <option value="73">Lupane West</option>
-	        					<option value="74">Mabuthweni/Emganwini</option>
-	        					<option value="75">Magunje</option>
-	        					<option value="76">Makonde</option>
-	        					<option value="77">Makoni Central</option>
-	        					<option value="78">Makoni North</option>
-	        					<option value="79">Makoni South</option>
-	        					<option value="80">Makoni West</option>
-	        					<option value="81">Mangwe</option>
-                                <option value="82">Maramba Pfungwe</option>
-	        					<option value="83">Marondera Central</option>
-	        					<option value="84">Marondera East</option>
-	        					<option value="85">Marondera West</option>
-	        					<option value="86">Masvingo West</option>
-	        					<option value="87">Masvingo Central</option>
-	        					<option value="88">Masvingo North</option>
-	        					<option value="89">Masvingo South</option>
-	        					<option value="90">Masvingo Urban</option>
-                                <option value="91">Matobo North</option>
-	        					<option value="92">Matobo South</option>
-	        					<option value="93">Mazowe Central</option>
-	        					<option value="94">Mazowe North</option>
-	        					<option value="95">Mazowe South</option>
-	        					<option value="96">Mazowe West</option>
-	        					<option value="97">Mberengwa RDC</option>
-	        					<option value="98">Mbire</option>
-	        					<option value="99">Mhangura</option>
-                                <option value="100">Mhondoro-Mubaira</option>
-	        					<option value="101">Mhondoro-Ngezi</option>
-	        					<option value="102">Mount Darwin East</option>
-	        					<option value="103">Mount Darwin North</option>
-	        					<option value="104">Mount Darwin South</option>
-	        					<option value="105">Mount Darwin West</option>
-	        					<option value="106">Mudzi North</option>
-	        					<option value="107">Mudzi South</option>
-	        					<option value="108">Mudzi West</option>
-                                <option value="109">Murewa North</option>
-	        					<option value="110">Murewa South</option>
-	        					<option value="111">Murewa West</option>
-	        					<option value="112">Musikavanhu</option>
-	        					<option value="113">Mutare Central</option>
-	        					<option value="114">Mutare North</option>
-	        					<option value="115">Mutare South</option>
-	        					<option value="116">Mutare West</option>
-	        					<option value="117">Mutasa Central</option>
-                                <option value="118">Mutasa North</option>
-	        					<option value="119">Mutoko East</option>
-	        					<option value="120">Mutoko North</option>
-	        					<option value="121">Mutoko South</option>
-	        					<option value="122">Muzarabani North</option>
-	        					<option value="123">Muzarabani South</option>
-	        					<option value="124">Muzvezve</option>
-	        					<option value="125">Mwenezi East</option>
-	        					<option value="126">Mwenezi West</option>
-                                <option value="127">Mzilikazi/Khumalo</option>
-	        					<option value="128">Nkayi North</option>
-	        					<option value="129">Nkayi South</option>
-	        					<option value="130">Norton</option>
-	        					<option value="131">Nyanga North</option>
-	        					<option value="132">Nyanga South</option>
-	        					<option value="133">Redcliff Municipality</option>
-	        					<option value="134">Runde RDC</option>
-	        					<option value="135">Rushinga</option>
-                                <option value="136">Sanyati</option>
-	        					<option value="137">Seke</option>
-	        					<option value="138">Shamva North</option>
-	        					<option value="139">Shamva South</option>
-	        					<option value="140">Shurugwi Town Council</option>
-	        					<option value="141">Takawira RDC</option>
-	        					<option value="142">Tongogara RDC</option>
-	        					<option value="143">Tsholotsho North</option>
-	        					<option value="144">Tsholotsho South</option>
-                                <option value="145">Umguza</option>
-	        					<option value="146">Umzingwane</option>
-	        					<option value="147">Uzumba</option>
-	        					<option value="148">Vungu RDC</option>
-	        					<option value="149">Wedza North</option>
-	        					<option value="150">Wedza South</option>
-	        					<option value="151">Zaka Central</option>
-	        					<option value="152">Zaka East</option>
-	        					<option value="153">Zaka North</option>
-                                <option value="154">Zaka West</option>
-	        					<option value="155">Zibagwe RDC</option>
-	        					<option value="156">Zvimba East</option>
-	        					<option value="157">Zvimba North</option>
-	        					<option value="158">Zvimba South</option>
-                                <option value="159">Zvimba West</option>
-	        					<option value="160">Zvishavane Town Council</option>
+	        					<option value="	1	">	ST.Marys</option>
+								<option value="	2	">	Beitbridge East	</option>
+								<option value="	3	">	Beitbridge West	</option>
+								<option value="	4	">	Bikita East	</option>
+								<option value="	5	">	Bikita South	</option>
+								<option value="	6	">	Bikita West	</option>
+								<option value="	7	">	Bindura North	</option>
+								<option value="	8	">	Bindura South	</option>
+								<option value="	9	">	Binga  North	</option>
+								<option value="	10	">	Binga  South	</option>
+								<option value="	11	">	Bubi	</option>
+								<option value="	12	">	Budiriro	</option>
+								<option value="	13	">	Buhera  Central	</option>
+								<option value="	14	">	Buhera  North	</option>
+								<option value="	15	">	Buhera  South	</option>
+								<option value="	16	">	Buhera  West	</option>
+								<option value="	17	">	Bulawayo Central	</option>
+								<option value="	18	">	Bulawayo East	</option>
+								<option value="	19	">	Bulawayo South	</option>
+								<option value="	20	">	Bulilima East	</option>
+								<option value="	21	">	Bulilima West	</option>
+								<option value="	22	">	Chakari	</option>
+								<option value="	23	">	Chegutu East	</option>
+								<option value="	24	">	Chegutu West	</option>
+								<option value="	25	">	Chikomba Central	</option>
+								<option value="	26	">	Chikomba East	</option>
+								<option value="	27	">	Chikomba West	</option>
+								<option value="	28	">	Chimanimani  East	</option>
+								<option value="	29	">	Chimanimani  West	</option>
+								<option value="	30	">	Chinhoyi	</option>
+								<option value="	31	">	Chipinge  Central	</option>
+								<option value="	32	">	Chipinge  East	</option>
+								<option value="	33	">	Chipinge  South	</option>
+								<option value="	34	">	Chipinge  West	</option>
+								<option value="	35	">	Chipinge  Central	</option>
+								<option value="	36	">	Chiredzi East	</option>
+								<option value="	37	">	Chiredzi North	</option>
+								<option value="	38	">	Chiredzi South	</option>
+								<option value="	39	">	Chiredzi West	</option>
+								<option value="	40	">	Chitungwiza North	</option>
+								<option value="	41	">	Chitungwiza South	</option>
+								<option value="	42	">	Chivi Central	</option>
+								<option value="	43	">	Chivi North	</option>
+								<option value="	44	">	Chivi South	</option>
+								<option value="	45	">	Dangamvura  Chikanga	</option>
+								<option value="	46	">	Dzivarasekwa	</option>
+								<option value="	47	">	Emakhandeni-Entumbane	</option>
+								<option value="	48	">	Epworth	</option>
+								<option value="	49	">	Glen Norah	</option>
+								<option value="	50	">	Glenview North	</option>
+								<option value="	51	">	Glenview South	</option>
+								<option value="	52	">	Gokwe North RDC	</option>
+								<option value="	53	">	Gokwe South RDC	</option>
+								<option value="	54	">	Gokwe Town Council	</option>
+								<option value="	55	">	Goromonzi North	</option>
+								<option value="	56	">	Goromonzi South	</option>
+								<option value="	57	">	Goromonzi West	</option>
+								<option value="	58	">	Guruve North	</option>
+								<option value="	59	">	Guruve South	</option>
+								<option value="	60	">	Gutu Central	</option>
+								<option value="	61	">	Gutu East	</option>
+								<option value="	62	">	Gutu North	</option>
+								<option value="	63	">	Gutu South	</option>
+								<option value="	64	">	Gutu West	</option>
+								<option value="	65	">	Gwanda Central	</option>
+								<option value="	66	">	Gwanda North	</option>
+								<option value="	67	">	Gwanda South	</option>
+								<option value="	68	">	Gweru Municipality	</option>
+								<option value="	69	">	Harare Central	</option>
+								<option value="	70	">	Harare East	</option>
+								<option value="	71	">	Harare North	</option>
+								<option value="	72	">	Harare South	</option>
+								<option value="	73	">	Harare West	</option>
+								<option value="	74	">	Hatfield	</option>
+								<option value="	75	">	Headlands	</option>
+								<option value="	76	">	Highfield East	</option>
+								<option value="	77	">	Highfield West	</option>
+								<option value="	78	">	Hurungwe Central	</option>
+								<option value="	79	">	Hurungwe East	</option>
+								<option value="	80	">	Hurungwe North	</option>
+								<option value="	81	">	Hurungwe West	</option>
+								<option value="	82	">	Hwange  Central	</option>
+								<option value="	83	">	Hwange  East	</option>
+								<option value="	84	">	Hwange  West	</option>
+								<option value="	85	">	Insiza North	</option>
+								<option value="	86	">	Insiza South	</option>
+								<option value="	87	">	Kadoma Central	</option>
+								<option value="	88	">	Kambuzuma	</option>
+								<option value="	89	">	Kariba	</option>
+								<option value="	90	">	Kuwadzana	</option>
+								<option value="	91	">	Kuwadzana East	</option>
+								<option value="	92	">	Kwekwe Municipality	</option>
+								<option value="	93	">	Lobengula	</option>
+								<option value="	94	">	Lupane  East	</option>
+								<option value="	95	">	Lupane  West	</option>
+								<option value="	96	">	Luveve	</option>
+								<option value="	97	">	Mabvuku-Tafara	</option>
+								<option value="	98	">	Magunje	</option>
+								<option value="	99	">	Magwegwe	</option>
+								<option value="	100	">	Makokoba	</option>
+								<option value="	101	">	Makonde	</option>
+								<option value="	102	">	Makoni  Central	</option>
+								<option value="	103	">	Makoni  North	</option>
+								<option value="	104	">	Makoni  South	</option>
+								<option value="	105	">	Makoni  West	</option>
+								<option value="	106	">	Mangwe	</option>
+								<option value="	107	">	Maramba Pfungwe	</option>
+								<option value="	108	">	Marondera Central	</option>
+								<option value="	109	">	Marondera East	</option>
+								<option value="	110	">	Marondera West	</option>
+								<option value="	111	">	Masvingo Central	</option>
+								<option value="	112	">	Masvingo North	</option>
+								<option value="	113	">	Masvingo South	</option>
+								<option value="	114	">	Masvingo Urban	</option>
+								<option value="	115	">	Masvingo West	</option>
+								<option value="	116	">	Matobo North	</option>
+								<option value="	117	">	Matobo South	</option>
+								<option value="	118	">	Mazowe Central	</option>
+								<option value="	119	">	Mazowe North	</option>
+								<option value="	120	">	Mazowe South	</option>
+								<option value="	121	">	Mazowe West	</option>
+								<option value="	122	">	Mbare	</option>
+								<option value="	123	">	Mberengwa RDC	</option>
+								<option value="	124	">	Mbire	</option>
+								<option value="	125	">	Mhangura	</option>
+								<option value="	126	">	Mhondoro-Mubaira	</option>
+								<option value="	127	">	Mhondoro-Ngezi	</option>
+								<option value="	128	">	Mount Darwin East	</option>
+								<option value="	129	">	Mount Darwin North	</option>
+								<option value="	130	">	Mount Darwin South	</option>
+								<option value="	131	">	Mount Darwin West	</option>
+								<option value="	132	">	Mount Pleasant	</option>
+								<option value="	133	">	Mudzi North	</option>
+								<option value="	134	">	Mudzi South	</option>
+								<option value="	135	">	Mudzi West	</option>
+								<option value="	136	">	Mufakose	</option>
+								<option value="	137	">	Murewa North	</option>
+								<option value="	138	">	Murewa South	</option>
+								<option value="	139	">	Murewa West	</option>
+								<option value="	140	">	Musikavanhu	</option>
+								<option value="	141	">	Mutare  Central	</option>
+								<option value="	142	">	Mutare  North	</option>
+								<option value="	143	">	Mutare  South	</option>
+								<option value="	144	">	Mutare  West	</option>
+								<option value="	145	">	Mutasa  Central	</option>
+								<option value="	146	">	Mutasa  North	</option>
+								<option value="	147	">	Mutasa  South	</option>
+								<option value="	148	">	Mutoko East	</option>
+								<option value="	149	">	Mutoko North	</option>
+								<option value="	150	">	Mutoko South	</option>
+								<option value="	151	">	Muzarabani North	</option>
+								<option value="	152	">	Muzarabani South	</option>
+								<option value="	153	">	Muzvezve	</option>
+								<option value="	154	">	Mwenezi East	</option>
+								<option value="	155	">	Mwenezi West	</option>
+								<option value="	156	">	Nkayi  North	</option>
+								<option value="	157	">	Nkayi  South	</option>
+								<option value="	158	">	Nketa	</option>
+								<option value="	159	">	Nkulumane	</option>
+								<option value="	160	">	Norton	</option>
+								<option value="	161	">	Nyanga  North	</option>
+								<option value="	162	">	Nyanga  South	</option>
+								<option value="	163	">	Pelandaba-Mpopoma	</option>
+								<option value="	164	">	Pumula	</option>
+								<option value="	165	">	Redcliff Municipality	</option>
+								<option value="	166	">	Runde RDC	</option>
+								<option value="	167	">	Rushinga	</option>
+								<option value="	168	">	Sanyati	</option>
+								<option value="	169	">	Seke	</option>
+								<option value="	170	">	Shamva North	</option>
+								<option value="	171	">	Shamva South	</option>
+								<option value="	172	">	Shurugwi Town council	</option>
+								<option value="	173	">	Southerton	</option>
+								<option value="	174	">	Sunningdale	</option>
+								<option value="	175	">	Takawira RDC	</option>
+								<option value="	176	">	Tongogara RDC	</option>
+								<option value="	177	">	Tsholotsho  North	</option>
+								<option value="	178	">	Tsholotsho  South	</option>
+								<option value="	179	">	Umguza	</option>
+								<option value="	180	">	Umzingwane	</option>
+								<option value="	181	">	Uzumba	</option>
+								<option value="	182	">	Vungu RDC	</option>
+								<option value="	183	">	Warren Park	</option>
+								<option value="	184	">	Wedza North	</option>
+								<option value="	185	">	Wedza South	</option>
+								<option value="	186	">	Zaka Central	</option>
+								<option value="	187	">	Zaka East	</option>
+								<option value="	188	">	Zaka North	</option>
+								<option value="	189	">	Zaka West	</option>
+								<option value="	190	">	Zengeza East	</option>
+								<option value="	191	">	Zengeza West	</option>
+								<option value="	192	">	Zibagwe RDC	</option>
+								<option value="	193	">	Zvimba East	</option>
+								<option value="	194	">	Zvimba North	</option>
+								<option value="	195	">	Zvimba South	</option>
+								<option value="	196	">	Zvimba West	</option>
+								<option value="	197	">	Zvishavane Town Council	</option>
+	        					
 	        					                                
 	        			        					
 	        					<!--
-	        					<option value="1" selected>Chitungwiza Municipality</option>
-	        					<option value="2">Beitbridge East</option>
-	        					<option value="3">Bikita East</option>
-	        					<option value="4">Bikita South</option>
-	        					<option value="5">Bikita West</option>
-	        					<option value="6">Bindura North</option>
-	        					<option value="7">Bindura South</option>
-	        					<option value="8">Binga South</option>
-	        					<option value="9">Binga North</option>
-	        					<option value="10">Bubi</option>
-                                <option value="11">Buhera Central</option>
-	        					<option value="12">Buhera North</option>
-	        					<option value="13">Buhera South</option>
-	        					<option value="14">Buhera West</option>
-	        					<option value="15">Bulilima East</option>
-	        					<option value="16">Bulilima West</option>
-	        					<option value="17">Chakari</option>
-	        					<option value="18">Chegutu East</option>
-	        					<option value="19">Chegutu West</option>
-                                <option value="20">Chikomba Central</option>
-	        					<option value="21">Chikomba East</option>
-	        					<option value="22">Chikomba West</option>
-	        					<option value="23">Chimanimani East</option>
-	        					<option value="24">Chimanimani West</option>
-	        					<option value="25">Chinhoyi</option>
-	        					<option value="26">Chipinge Central</option>
-	        					<option value="27">Chipinge East</option>
-	        					<option value="28">Chipinge South</option>
-                                <option value="29">Chipinge West</option>
-	        					<option value="30">Chipinge Central</option>
-	        					<option value="31">Chiredzi East</option>
-	        					<option value="32">Chiredzi North</option>
-	        					<option value="33">Chiredzi South</option>
-	        					<option value="34">Chiredzi West</option>
-	        					<option value="35">Chivi Central</option>
-	        					<option value="36">Chivi North</option>
-                                <option value="37">Chivi South</option>
-	        					<option value="38">Dangamvura Chikanga</option>
-	        					<option value="39">Epworth local board</option>
-	        					<option value="40">Gokwe North RDC</option>
-	        					<option value="41">Gokwe South RDC</option>
-	        					<option value="42">Gokwe Town Council</option>
-	        					<option value="43">Goromonzi North</option>
-	        					<option value="44">Goromonzi South</option>
-	        					<option value="45">Goromonzi West</option>
-                                <option value="46">Guruve North</option>
-	        					<option value="47">Guruve South</option>
-	        					<option value="48">Gutu Central</option>
-	        					<option value="49">Gutu East</option>
-	        					<option value="50">Gutu North</option>
-	        					<option value="51">Gutu South</option>
-	        					<option value="52">Gutu West</option>
-	        					<option value="53">Gwabalanda/Masotsha Ndlovu</option>
-	        					<option value="54">Gwanda Central</option>
-                                <option value="55">Gwanda North</option>
-	        					<option value="56">Gwanda South</option>
-	        					<option value="57">Gweru Municipality</option>
-	        					<option value="58">Harare Municipality</option>
-	        					<option value="59">Headlands</option>
-	        					<option value="60">Hurungwe Central</option>
-	        					<option value="61">Hurungwe East</option>
-	        					<option value="62">Hurungwe North</option>
-	        					<option value="63">Hurungwe West</option>
-                                <option value="64">Hwange Central</option>
-	        					<option value="65">Hwange East</option>
-	        					<option value="66">Hwange West</option>
-	        					<option value="67">Insiza North</option>
-	        					<option value="68">Insiza South</option>
-	        					<option value="69">Kadoma Central</option>
-	        					<option value="70">Kariba</option>
-	        					<option value="71">Kwekwe Municipality</option>
-	        					<option value="72">Lupane East</option>
-                                <option value="73">Lupane West</option>
-	        					<option value="74">Mabuthweni/Emganwini</option>
-	        					<option value="75">Magunje</option>
-	        					<option value="76">Makonde</option>
-	        					<option value="77">Makoni Central</option>
-	        					<option value="78">Makoni North</option>
-	        					<option value="79">Makoni South</option>
-	        					<option value="80">Makoni West</option>
-	        					<option value="81">Mangwe</option>
-                                <option value="82">Maramba Pfungwe</option>
-	        					<option value="83">Marondera Central</option>
-	        					<option value="84">Marondera East</option>
-	        					<option value="85">Marondera West</option>
-	        					<option value="86">Masvingo West</option>
-	        					<option value="87">Masvingo Central</option>
-	        					<option value="88">Masvingo North</option>
-	        					<option value="89">Masvingo South</option>
-	        					<option value="90">Masvingo Urban</option>
-                                <option value="91">Matobo North</option>
-	        					<option value="92">Matobo South</option>
-	        					<option value="93">Mazowe Central</option>
-	        					<option value="94">Mazowe North</option>
-	        					<option value="95">Mazowe South</option>
-	        					<option value="96">Mazowe West</option>
-	        					<option value="97">Mberengwa RDC</option>
-	        					<option value="98">Mbire</option>
-	        					<option value="99">Mhangura</option>
-                                <option value="100">Mhondoro-Mubaira</option>
-	        					<option value="101">Mhondoro-Ngezi</option>
-	        					<option value="102">Mount Darwin East</option>
-	        					<option value="103">Mount Darwin North</option>
-	        					<option value="104">Mount Darwin South</option>
-	        					<option value="105">Mount Darwin West</option>
-	        					<option value="106">Mudzi North</option>
-	        					<option value="107">Mudzi South</option>
-	        					<option value="108">Mudzi West</option>
-                                <option value="109">Murewa North</option>
-	        					<option value="110">Murewa South</option>
-	        					<option value="111">Murewa West</option>
-	        					<option value="112">Musikavanhu</option>
-	        					<option value="113">Mutare Central</option>
-	        					<option value="114">Mutare North</option>
-	        					<option value="115">Mutare South</option>
-	        					<option value="116">Mutare West</option>
-	        					<option value="117">Mutasa Central</option>
-                                <option value="118">Mutasa North</option>
-	        					<option value="119">Mutoko East</option>
-	        					<option value="120">Mutoko North</option>
-	        					<option value="121">Mutoko South</option>
-	        					<option value="122">Muzarabani North</option>
-	        					<option value="123">Muzarabani South</option>
-	        					<option value="124">Muzvezve</option>
-	        					<option value="125">Mwenezi East</option>
-	        					<option value="126">Mwenezi West</option>
-                                <option value="127">Mzilikazi/Khumalo</option>
-	        					<option value="128">Nkayi North</option>
-	        					<option value="129">Nkayi South</option>
-	        					<option value="130">Norton</option>
-	        					<option value="131">Nyanga North</option>
-	        					<option value="132">Nyanga South</option>
-	        					<option value="133">Redcliff Municipality</option>
-	        					<option value="134">Runde RDC</option>
-	        					<option value="135">Rushinga</option>
-                                <option value="136">Sanyati</option>
-	        					<option value="137">Seke</option>
-	        					<option value="138">Shamva North</option>
-	        					<option value="139">Shamva South</option>
-	        					<option value="140">Shurugwi Town Council</option>
-	        					<option value="141">Takawira RDC</option>
-	        					<option value="142">Tongogara RDC</option>
-	        					<option value="143">Tsholotsho North</option>
-	        					<option value="144">Tsholotsho South</option>
-                                <option value="145">Umguza</option>
-	        					<option value="146">Umzingwane</option>
-	        					<option value="147">Uzumba</option>
-	        					<option value="148">Vungu RDC</option>
-	        					<option value="149">Wedza North</option>
-	        					<option value="150">Wedza South</option>
-	        					<option value="151">Zaka Central</option>
-	        					<option value="152">Zaka East</option>
-	        					<option value="153">Zaka North</option>
-                                <option value="154">Zaka West</option>
-	        					<option value="155">Zibagwe RDC</option>
-	        					<option value="156">Zvimba East</option>
-	        					<option value="157">Zvimba North</option>
-	        					<option value="158">Zvimba South</option>
-                                <option value="159">Zvimba West</option>
-	        					<option value="160">Zvishavane Town Council</option>
+	        					<option value="0">Select a Constituency
+</option>
+	        					<option value="	1	">	ST.Marys</option>
+								<option value="	2	">	Beitbridge East	</option>
+								<option value="	3	">	Beitbridge West	</option>
+								<option value="	4	">	Bikita East	</option>
+								<option value="	5	">	Bikita South	</option>
+								<option value="	6	">	Bikita West	</option>
+								<option value="	7	">	Bindura North	</option>
+								<option value="	8	">	Bindura South	</option>
+								<option value="	9	">	Binga  North	</option>
+								<option value="	10	">	Binga  South	</option>
+								<option value="	11	">	Bubi	</option>
+								<option value="	12	">	Budiriro	</option>
+								<option value="	13	">	Buhera  Central	</option>
+								<option value="	14	">	Buhera  North	</option>
+								<option value="	15	">	Buhera  South	</option>
+								<option value="	16	">	Buhera  West	</option>
+								<option value="	17	">	Bulawayo Central	</option>
+								<option value="	18	">	Bulawayo East	</option>
+								<option value="	19	">	Bulawayo South	</option>
+								<option value="	20	">	Bulilima East	</option>
+								<option value="	21	">	Bulilima West	</option>
+								<option value="	22	">	Chakari	</option>
+								<option value="	23	">	Chegutu East	</option>
+								<option value="	24	">	Chegutu West	</option>
+								<option value="	25	">	Chikomba Central	</option>
+								<option value="	26	">	Chikomba East	</option>
+								<option value="	27	">	Chikomba West	</option>
+								<option value="	28	">	Chimanimani  East	</option>
+								<option value="	29	">	Chimanimani  West	</option>
+								<option value="	30	">	Chinhoyi	</option>
+								<option value="	31	">	Chipinge  Central	</option>
+								<option value="	32	">	Chipinge  East	</option>
+								<option value="	33	">	Chipinge  South	</option>
+								<option value="	34	">	Chipinge  West	</option>
+								<option value="	35	">	Chipinge  Central	</option>
+								<option value="	36	">	Chiredzi East	</option>
+								<option value="	37	">	Chiredzi North	</option>
+								<option value="	38	">	Chiredzi South	</option>
+								<option value="	39	">	Chiredzi West	</option>
+								<option value="	40	">	Chitungwiza North	</option>
+								<option value="	41	">	Chitungwiza South	</option>
+								<option value="	42	">	Chivi Central	</option>
+								<option value="	43	">	Chivi North	</option>
+								<option value="	44	">	Chivi South	</option>
+								<option value="	45	">	Dangamvura  Chikanga	</option>
+								<option value="	46	">	Dzivarasekwa	</option>
+								<option value="	47	">	Emakhandeni-Entumbane	</option>
+								<option value="	48	">	Epworth	</option>
+								<option value="	49	">	Glen Norah	</option>
+								<option value="	50	">	Glenview North	</option>
+								<option value="	51	">	Glenview South	</option>
+								<option value="	52	">	Gokwe North RDC	</option>
+								<option value="	53	">	Gokwe South RDC	</option>
+								<option value="	54	">	Gokwe Town Council	</option>
+								<option value="	55	">	Goromonzi North	</option>
+								<option value="	56	">	Goromonzi South	</option>
+								<option value="	57	">	Goromonzi West	</option>
+								<option value="	58	">	Guruve North	</option>
+								<option value="	59	">	Guruve South	</option>
+								<option value="	60	">	Gutu Central	</option>
+								<option value="	61	">	Gutu East	</option>
+								<option value="	62	">	Gutu North	</option>
+								<option value="	63	">	Gutu South	</option>
+								<option value="	64	">	Gutu West	</option>
+								<option value="	65	">	Gwanda Central	</option>
+								<option value="	66	">	Gwanda North	</option>
+								<option value="	67	">	Gwanda South	</option>
+								<option value="	68	">	Gweru Municipality	</option>
+								<option value="	69	">	Harare Central	</option>
+								<option value="	70	">	Harare East	</option>
+								<option value="	71	">	Harare North	</option>
+								<option value="	72	">	Harare South	</option>
+								<option value="	73	">	Harare West	</option>
+								<option value="	74	">	Hatfield	</option>
+								<option value="	75	">	Headlands	</option>
+								<option value="	76	">	Highfield East	</option>
+								<option value="	77	">	Highfield West	</option>
+								<option value="	78	">	Hurungwe Central	</option>
+								<option value="	79	">	Hurungwe East	</option>
+								<option value="	80	">	Hurungwe North	</option>
+								<option value="	81	">	Hurungwe West	</option>
+								<option value="	82	">	Hwange  Central	</option>
+								<option value="	83	">	Hwange  East	</option>
+								<option value="	84	">	Hwange  West	</option>
+								<option value="	85	">	Insiza North	</option>
+								<option value="	86	">	Insiza South	</option>
+								<option value="	87	">	Kadoma Central	</option>
+								<option value="	88	">	Kambuzuma	</option>
+								<option value="	89	">	Kariba	</option>
+								<option value="	90	">	Kuwadzana	</option>
+								<option value="	91	">	Kuwadzana East	</option>
+								<option value="	92	">	Kwekwe Municipality	</option>
+								<option value="	93	">	Lobengula	</option>
+								<option value="	94	">	Lupane  East	</option>
+								<option value="	95	">	Lupane  West	</option>
+								<option value="	96	">	Luveve	</option>
+								<option value="	97	">	Mabvuku-Tafara	</option>
+								<option value="	98	">	Magunje	</option>
+								<option value="	99	">	Magwegwe	</option>
+								<option value="	100	">	Makokoba	</option>
+								<option value="	101	">	Makonde	</option>
+								<option value="	102	">	Makoni  Central	</option>
+								<option value="	103	">	Makoni  North	</option>
+								<option value="	104	">	Makoni  South	</option>
+								<option value="	105	">	Makoni  West	</option>
+								<option value="	106	">	Mangwe	</option>
+								<option value="	107	">	Maramba Pfungwe	</option>
+								<option value="	108	">	Marondera Central	</option>
+								<option value="	109	">	Marondera East	</option>
+								<option value="	110	">	Marondera West	</option>
+								<option value="	111	">	Masvingo Central	</option>
+								<option value="	112	">	Masvingo North	</option>
+								<option value="	113	">	Masvingo South	</option>
+								<option value="	114	">	Masvingo Urban	</option>
+								<option value="	115	">	Masvingo West	</option>
+								<option value="	116	">	Matobo North	</option>
+								<option value="	117	">	Matobo South	</option>
+								<option value="	118	">	Mazowe Central	</option>
+								<option value="	119	">	Mazowe North	</option>
+								<option value="	120	">	Mazowe South	</option>
+								<option value="	121	">	Mazowe West	</option>
+								<option value="	122	">	Mbare	</option>
+								<option value="	123	">	Mberengwa RDC	</option>
+								<option value="	124	">	Mbire	</option>
+								<option value="	125	">	Mhangura	</option>
+								<option value="	126	">	Mhondoro-Mubaira	</option>
+								<option value="	127	">	Mhondoro-Ngezi	</option>
+								<option value="	128	">	Mount Darwin East	</option>
+								<option value="	129	">	Mount Darwin North	</option>
+								<option value="	130	">	Mount Darwin South	</option>
+								<option value="	131	">	Mount Darwin West	</option>
+								<option value="	132	">	Mount Pleasant	</option>
+								<option value="	133	">	Mudzi North	</option>
+								<option value="	134	">	Mudzi South	</option>
+								<option value="	135	">	Mudzi West	</option>
+								<option value="	136	">	Mufakose	</option>
+								<option value="	137	">	Murewa North	</option>
+								<option value="	138	">	Murewa South	</option>
+								<option value="	139	">	Murewa West	</option>
+								<option value="	140	">	Musikavanhu	</option>
+								<option value="	141	">	Mutare  Central	</option>
+								<option value="	142	">	Mutare  North	</option>
+								<option value="	143	">	Mutare  South	</option>
+								<option value="	144	">	Mutare  West	</option>
+								<option value="	145	">	Mutasa  Central	</option>
+								<option value="	146	">	Mutasa  North	</option>
+								<option value="	147	">	Mutasa  South	</option>
+								<option value="	148	">	Mutoko East	</option>
+								<option value="	149	">	Mutoko North	</option>
+								<option value="	150	">	Mutoko South	</option>
+								<option value="	151	">	Muzarabani North	</option>
+								<option value="	152	">	Muzarabani South	</option>
+								<option value="	153	">	Muzvezve	</option>
+								<option value="	154	">	Mwenezi East	</option>
+								<option value="	155	">	Mwenezi West	</option>
+								<option value="	156	">	Nkayi  North	</option>
+								<option value="	157	">	Nkayi  South	</option>
+								<option value="	158	">	Nketa	</option>
+								<option value="	159	">	Nkulumane	</option>
+								<option value="	160	">	Norton	</option>
+								<option value="	161	">	Nyanga  North	</option>
+								<option value="	162	">	Nyanga  South	</option>
+								<option value="	163	">	Pelandaba-Mpopoma	</option>
+								<option value="	164	">	Pumula	</option>
+								<option value="	165	">	Redcliff Municipality	</option>
+								<option value="	166	">	Runde RDC	</option>
+								<option value="	167	">	Rushinga	</option>
+								<option value="	168	">	Sanyati	</option>
+								<option value="	169	">	Seke	</option>
+								<option value="	170	">	Shamva North	</option>
+								<option value="	171	">	Shamva South	</option>
+								<option value="	172	">	Shurugwi Town council	</option>
+								<option value="	173	">	Southerton	</option>
+								<option value="	174	">	Sunningdale	</option>
+								<option value="	175	">	Takawira RDC	</option>
+								<option value="	176	">	Tongogara RDC	</option>
+								<option value="	177	">	Tsholotsho  North	</option>
+								<option value="	178	">	Tsholotsho  South	</option>
+								<option value="	179	">	Umguza	</option>
+								<option value="	180	">	Umzingwane	</option>
+								<option value="	181	">	Uzumba	</option>
+								<option value="	182	">	Vungu RDC	</option>
+								<option value="	183	">	Warren Park	</option>
+								<option value="	184	">	Wedza North	</option>
+								<option value="	185	">	Wedza South	</option>
+								<option value="	186	">	Zaka Central	</option>
+								<option value="	187	">	Zaka East	</option>
+								<option value="	188	">	Zaka North	</option>
+								<option value="	189	">	Zaka West	</option>
+								<option value="	190	">	Zengeza East	</option>
+								<option value="	191	">	Zengeza West	</option>
+								<option value="	192	">	Zibagwe RDC	</option>
+								<option value="	193	">	Zvimba East	</option>
+								<option value="	194	">	Zvimba North	</option>
+								<option value="	195	">	Zvimba South	</option>
+								<option value="	196	">	Zvimba West	</option>
+								<option value="	197	">	Zvishavane Town Council	</option>
 	        					-->
 	        				</select>
 	        			</div>
 	        		</div>
 	        		<div class="span4">
 	        			<div style="text-align: center;">
-	        				<p class="lead">Constituency</p>
+	        				<p class="lead">District</p>
 	        				<select id="const_select">
-	        					<option value="0">- Select a District First -</option>
+	        					<option value="0">- Select a Constituency First -</option>
 	        				</select>
 	        			</div>
 	        		</div>
@@ -452,7 +520,7 @@
 	        			<div style="text-align: center;">
 	        				<p class="lead">Ward</p>
 	        				<select id="ward_select">
-	        					<option value="0">- Select a District
+	        					<option value="0">- Select a Constituency
  First -</option>
 	        				</select>
 	        			</div>
@@ -462,7 +530,7 @@
 	        	<div id="found-reg" style="display: none;">
 	        		<table class="table table-hover" style="margin-bottom: 0;">
 	        			<thead><tr><td>
-	        				<h4>Polling Stations in <span id="header-name"> District
+	        				<h4>Polling Stations in <span id="header-name"> Constituency
 </span></h4>
 	        			</td></tr></thead>
 	        			<tbody id="reg-centres">
@@ -478,22 +546,25 @@
         	
         	<hr style="margin-top: 90px;"/>
         	
-        	<div class="social-icons">
-        		<h3>Get Social</h3>
-        		<p> 
-        		<a href="javascript:void(0);" name="Share_TW" title="Share on Twitter | ZimGotToVote! Zimvoices"
-        		onClick='window.open("http://twitter.com/home?status=Find%20as%20a%20a%20polling%20station%20a%20and%20know%20where%20to%20vote%20http://www.zimvoices.co.zw%20%23%Your%20%Vote%20%is%20%Your%20%Voice%20%!%20%by%20%Zimvoicese%20by%20@Zimvoices","ZimGotToVote","width=550,height=270");'><img src="img/social/twitter.png" alt="Share on Twitter" /></a>
-        		<a href="javascript:void(0);" name="Share_FB" title="Share on FB | ZimGotToVote! Zimvoices"
-        		onClick='window.open("http://www.facebook.com/sharer.php?u=http%3A%2F%2Fzimvoices.co.zw%2F&t=Find+a+polling+station+and+Know+where+To+Vote.","Your Vote is You Voice!ZimVoices","width=550,height=270");'><img src="img/social/facebook.png" alt="Share on Facebook" /></a>
-        		<a href="https://plus.google.com/share?url=zimvoices.co.zw" onclick="javascript:window.open(this.href,
-        		  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img src="img/social/googleplus.png" alt="Share on Google Plus" /></a>
-        		</p>
-        	</div>
+			<div class="social-icons">
+			        		<h3>Get Social</h3>
+			        		<p> 
+			        		<a href="javascript:void(0);" name="Share_TW" title="Share on Twitter | GoToVote! ZW"
+			        		onClick='window.open("http://twitter.com/home?status=Find%20a%20polling%20station%20nearest%20to%20you%20now!%20on%20http://www.zimvoices.co.zw%20%23ZimElection%20%23ZimbabweDecides%20%23twimbos%20@263Chat%20 ","GoToVote! ZW","width=550,height=270");'><img src="img/social/twitter.png" alt="Share on Twitter" /></a>
+			        		<a href="javascript:void(0);" name="Share_FB" title="Share on FB | GoToVote! ZW"
+			        		onClick='window.open("http://www.facebook.com/sharer.php?u=http%3A%2F%2Fzimvoices.co.zw%2F&t=Find+a+polling+station+nearest+to+you+now!+checkout+where+you+will+be+voting+on+the+31st+of+July.","GoToVote! ZW","width=550,height=270");'><img src="img/social/facebook.png" alt="Share on Facebook" /></a>
+			        		<a href="https://plus.google.com/share?url=www.zimvoices.co.zw" onclick="javascript:window.open(this.href,
+			        		  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img src="img/social/googleplus.png" alt="Share on Google Plus" /></a>
+			        		</p>
+			        	</div>
         	
         	<table align="center"><tr><td>
-        		<a class="twitter-timeline" width="auto" href="https://twitter.com/search?q=%ZimVoices" data-widget-id="271009484485304320">Tweets about "#ZimVoices"</a>
-        		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-        	</td></tr></table>
+			
+				<a class="twitter-timeline" width="auto" href="https://twitter.com/zimvoices2013" data-widget-id="357816884877484032">Tweets about #ZimElection</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+				
+				
+				    		       	</td></tr></table>
         	
         	
         	<!--
@@ -502,7 +573,7 @@
         			<h4>What are Harmonised Elections?</h4>
         			<p>Harmonised elections are a process of casting three separate votes in one polling station. That is casting your vote for a Presidential candidate, House of Assemble candidate, Senate Candidate and finally your Local Authority councilor.</p>
         			
-        			<h4>Who is eligable to vote in the Presidential Election?</h4>
+        			<h4>Who is eligible to vote in the Presidential Election?</h4>
         			<p>In order to qualify as a voter, one must:</p>
         			<ul>
         				<li><p>Be a Zimbabwean citizen</p></li>
@@ -511,7 +582,7 @@
                                     
         			</ul>
         			
-        			<h4>Who is eligable to vote in the House of Assembly Constituency Election?</h4>
+        			<h4>Who is eligible to vote in the House of Assembly Constituency Election?</h4>
         			<li><p>Be a Zimbabwean citizen</p></li>
         				<li><p>Be 18 years old and above</p></li>
                         <li><p>Be registered as voter in the constituency in question</p></li>
@@ -519,7 +590,7 @@
         		</div>
         		<div class="span6">
         			
-        			<h4>Who is eligable to vote in the Senate Election?</h4>
+        			<h4>Who is eligible to vote in the Senate Election?</h4>
         			<p>In order to qualify as a voter, one must:</p>
         			<ul>
         				<li><p>Be a Zimbabwean citizen</p></li>
@@ -529,7 +600,7 @@
         		</div>
         		<div class="span6">
         			
-        			<h4>Who is eligable to vote in the Local Authority Election?</h4>
+        			<h4>Who is eligible to vote in the Local Authority Election?</h4>
         			<p>In order to qualify as a voter, one must:</p>
         			<ul>
         				<li><p>Be a Zimbabwean citizen</p></li>
@@ -543,7 +614,7 @@
         	<hr>
         	
         	<div class="footer">
-        		<a href="http://code4kenya.org" target="_blank"><img src="img/c4k_logo.png" alt="Code 4 Kenya" /></a>
+        		<a href="http://zimvoices.co.zw" target="_blank"><img src="img/c4k_logo.png" alt="Zimvoices" /></a>
         	</div>
         	
             </div>
@@ -557,7 +628,7 @@
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
-            var _gaq=[['_setAccount','UA-33350783-2'],['_trackPageview']];
+            var _gaq=[['_setAccount','UA-42565177-1'],['_trackPageview']];
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
             g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g,s)}(document,'script'));
